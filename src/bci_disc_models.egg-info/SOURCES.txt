@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/bci_disc_models.egg-info/PKG-INFO
+src/bci_disc_models.egg-info/SOURCES.txt
+src/bci_disc_models.egg-info/dependency_links.txt
+src/bci_disc_models.egg-info/requires.txt
+src/bci_disc_models.egg-info/top_level.txt
+test/test_models.py
