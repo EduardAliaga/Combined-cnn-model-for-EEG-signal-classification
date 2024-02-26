@@ -1,43 +1,29 @@
-Code for "Recursive Estimation of User Intent from Noninvasive Electroencephalography using Discriminative Models" by Niklas Smedemark-Margulies, Basak Celik, Tales Imbiriba, Aziz Kocanaogullari, and Deniz Erdogmus
+# Reproducing a State-of-the-Art Paper on Machine Learning Applied to Brain Computer Interfaces
 
-In this work, we seek to infer a user's desired symbol from EEG measurements during a query-and-response typing task.
-We derive a framework for recursively estimating the desired posterior probabilities of symbols using classifier models such as deep neural networks.
-We construct a simulated typing task for evaluating performance, and find that this approach outperforms baseline approaches that compute these probabilities using generative models.
+This repository hosts the code and documentation for the paper "Reproducing a State-of-the-Art Paper on Machine Learning Applied to Brain Computer Interfaces" by Eduard Ramon Aliaga Torrens and Alberto Cabellos Aparicio. Our work advances the research on Brain-Computer Interfaces (BCIs) by proposing a Combined Convolutional Neural Network (CombinedCNN) model, aimed at enhancing the accuracy of EEG signal analysis for detecting user intent in a typing task.
 
-We use https://pypi.org/project/thu-rsvp-dataset/1.1.0/ for fetching and preprocessing benchmark dataset from https://www.frontiersin.org/articles/10.3389/fnins.2020.568000/full.
-
+You will find the combined cnn model among the other ones here: [Combined-cnn and others](https://github.com/EduardAliaga/Combined-cnn-model-for-EEG-signal-classification/blob/main/src/bci_disc_models/models/neural_net/network_arch.py)
 # Setup
 
-Setup project with `make` and activate virtualenv with `source venv/bin/activate`
+Setup project with make and activate virtualenv with source venv/bin/activate
 
 # Usage
 
 To reproduce our experiments, please follow these steps:
 
-1. Preprocess data: `python scripts/prepare_data.py`
-2. Pretrain models: `python scripts/train.py`
-3. Evaluate models in simulated typing task: `python scripts/evaluate.py`
-4. Parse saved results from evaluation: `python scripts/parse_results.py`
-5. Collect statistics from parsed results: `python scripts/analyze_results.py`
-6. Make plots: `python scripts/plots.py`
+Preprocess data: ```python scripts/prepare_data.py```
+Pretrain models: ```python scripts/train.py```
+Evaluate models in simulated typing task: ```python scripts/evaluate.py```
+Parse saved results from evaluation: ```python scripts/parse_results.py```
+Collect statistics from parsed results: ```python scripts/analyze_results.py```
+Make plots: ```python scripts/plots.py```
+To run tests: ```pytest --disable-warnings -s```
 
-To run tests: `pytest --disable-warnings -s`
-# PDF
-To read our paper, see: 
-- https://ieeexplore.ieee.org/document/10095715
-- https://arxiv.org/pdf/2211.02630.pdf
 
-# Citation
+## Resources
 
-If you use this code, please cite our paper:
-```bibtex
-@inproceedings{smedemark2023recursive,
-  title={Recursive Estimation of User Intent From Noninvasive Electroencephalography Using Discriminative Models},
-  author={Smedemark-Margulies, Niklas and Celik, Basak and Imbiriba, Tales and Kocanaogullari, Aziz and Erdo{\u{g}}mu{\c{s}}, Deniz},
-  booktitle={ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-  pages={1--5},
-  year={2023},
-  organization={IEEE},
-  doi={10.1109/ICASSP49357.2023.10095715}
-}
-```
+- **Data:** This project utilizes the `thu-rsvp-dataset` for benchmarking. [Dataset Details](https://www.frontiersin.org/articles/10.3389/fnins.2020.568000/full)
+
+- **Papers:** For detailed insights into our methodology and findings, refer to our paper. [Access the Paper]()
+
+
