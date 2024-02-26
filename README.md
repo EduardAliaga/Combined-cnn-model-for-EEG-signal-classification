@@ -24,6 +24,6 @@ To run tests: ```pytest --disable-warnings -s```
 
 - **Data:** This project utilizes the `thu-rsvp-dataset` for benchmarking. [Dataset Details](https://www.frontiersin.org/articles/10.3389/fnins.2020.568000/full)
 
-- **Papers:** For detailed insights into our methodology and findings, refer to our paper. [Access the Paper]()
+- **Papers:** For detailed insights into our methodology and findings, refer to our paper. [Access the Paper](https://github.com/EduardAliaga/Combined-cnn-model-for-EEG-signal-classification/blob/main/Reproducing%20a%20State-of-the-Art%20paper%20on%20Machine%20Learning%20applied%20to%20Brain%20Computer%20Interfaces.pdf)
 
 
